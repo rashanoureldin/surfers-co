@@ -31,7 +31,9 @@ $(document).ready(function(){
    */
   
     $('.bxslider').bxSlider({
-      pager:false
+      pager:false,
+      nextText:['<i class="fa fa-arrow-right" aria-hidden="true"></i>'],
+      prevText:['<i class="fa fa-arrow-left" aria-hidden="true"></i>']
     });
 
   /**
@@ -56,6 +58,14 @@ $(document).ready(function(){
               items:4
           }
       }
-    })
+    });
+
+  /**
+   *
+   * Star Rating
+   *
+   */
+
+    $('.starrr').starrr();
     
 });
